@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <title>CheckSplit</title>
+</head>
+<body>
+    <header>
+        <h1>Good Everning, Charlie</h1>
+        <div class="mainMenu">
+            <button class="dropbtn">Menu</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#">Print <br> Last Receipt</a>
+              <a href="#">Home</a>
+              <a href="#">Log out</a>
+              <a href="#">Log out</a>
+              <a href="#">Log out</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="listedOrders">
+            <h3 class="OrderInfo">Order Info </h3>
+            <div>
+                <form action="/quotes" method="POST">
+                    <input type="text" placeholder="Table No. / Client" name="name">
+                    <input type="text" placeholder="quote" name="quote">
+                    <button type="submit">Submit</button>
+                  </form>
+            </div>
+
+
+        </section>
+
+        <section class="searchAndInfoSection">  </section>
+    </main>
+
+    <footer>
+    </footer>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

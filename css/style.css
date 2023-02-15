@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+  }
+header, footer {
+    background-color: #E80018;
+    height: 100px;
+  }
+
+header{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Nunito', sans-serif;
+} 
+h1{
+    /* margin: 0; */
+    padding-top: 15px;
+    border: 3px solid black;
+    color: white;
+} 
+main {
+    height: 500px;
+    flex-direction: row;
+  }
+.listedOrders{
+    width: 70%;
+    border: 1px solid black;
+    height: 100%;
+}
+.searchAndInfoSection{
+    width: 30%;
+    border: 1px solid black;
+}
+.OrderInfo{
+    border-bottom: 2px solid black;
+    font-size: 1.5rem;
+}
+
+/* HERE IS THE MENU DROPDOWN STYLING */
+.dropbtn {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 16px;
+    font-size: 2rem;
+    border: 2px solid black;
+    cursor: pointer;
+    height: 100%;
+}
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #fd3c3c;
+    color: rgb(255, 255, 255);
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f0eaea;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+ /* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;
+}
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;} 
+
+
+  /* Media queries */
+  @media (min-width: 600px) {
+    main {
+      display: flex;
+      justify-content: center;
+    }
+    section {
+      width: 50%;
+    }
+  }
+  
+  @media (min-width: 800px) {
+    section {
+      width: 40%;
+    }
+  }
